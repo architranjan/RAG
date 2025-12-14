@@ -1,0 +1,184 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* ===== App Container ===== */
+.app {
+  max-width: 820px;
+  margin: 48px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.app h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Upload Box ===== */
+.upload-box {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.upload-box input {
+  margin-right: 12px;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ===== Chat Box ===== */
+.chat-box {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Messages Area ===== */
+.messages {
+  height: 440px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 6px;
+  margin-bottom: 16px;
+  scroll-behavior: smooth;
+}
+
+/* ===== Message Bubble ===== */
+.message {
+  max-width: 75%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* User Message */
+.message.user {
+  align-self: flex-end;
+  background: #e0f2fe;
+  color: #075985;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bot Message */
+.message.bot {
+  align-self: flex-start;
+  background: #f1f5f9;
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+}
+
+/* ===== Thinking Text ===== */
+.thinking {
+  font-size: 13px;
+  color: #6b7280;
+  margin-left: 6px;
+}
+
+/* ===== Input Box ===== */
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+}
+
+
+/* ===== Quiz ===== */
+.quiz-box {
+  background: #ffffff;
+  margin-top: 32px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #1e293b;
+  border: none;
+  cursor: pointer;
+}
+
+.quiz-option:hover {
+  background: #e5e7eb;
+}
+
+.quiz-option.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.quiz-option.wrong {
+  background: #f44336;
+  color: white;
+}
+
+.submit-btn {
+  margin-top: 16px;
+}
+
+.score {
+  margin-top: 14px;
+  font-weight: 600;
+}
