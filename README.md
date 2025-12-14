@@ -20,23 +20,7 @@ This system ensures that all answers and quizzes are generated **strictly from t
 
 ---
 
-## 🧩 System Architecture
 
-React Frontend
-|
-v
-Spring Boot Backend (RAG )
-|
-|-- PostgreSQL + pgvector (PDF chunks + embeddings)
-|
-|-- Python Flask Service (Local)
-| └── SentenceTransformer (all-MiniLM-L6-v2)
-|
-v
-LLM (Answer & Quiz Generation)
-
-
----
 
 ## 🛠️ Tech Stack
 
